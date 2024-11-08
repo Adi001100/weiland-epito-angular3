@@ -1,0 +1,11 @@
+.comparison-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 oszlopos elrendezés */
+  gap: 20px; /* Térköz a képek között */
+}
+
+.image-comparison-container {
+  width: 100%;
+  height: 300px;
+}

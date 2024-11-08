@@ -1,0 +1,5 @@
+<div class="image-comparison-container" #container (mousemove)="onMouseMove($event)">
+  <img [src]="image1" alt="Image 1" class="image">
+  <img [src]="image2" alt="Image 2" class="image image-top" [ngStyle]="{'clip-path': clipPathStyle}">
+  <div class="slider" [ngStyle]="{'left': sliderPosition + '%'}"></div>
+</div>

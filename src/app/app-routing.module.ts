@@ -1,10 +1,10 @@
-// src/app/routes.ts
-import { Routes } from '@angular/router';
+// src/app/app-routing.module.ts
+import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ReferenceComponent } from './components/reference/reference.component';
 
-export const routes: Routes = [
+const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'references', component: ReferenceComponent },
   //{ path: 'services', component: ServicesComponent },
@@ -12,3 +12,5 @@ export const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: '**', redirectTo: '' }
 ];
+
+export const AppRoutingModule = RouterModule.forRoot(routes);

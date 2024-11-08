@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+    background-color: rgb(197, 197, 197);
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+* {
+    font-family: "Unica One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
