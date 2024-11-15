@@ -2,6 +2,7 @@
   "routes": [
     "/",
     "/contact",
+    "/gallery",
     "/references"
   ]
 }
