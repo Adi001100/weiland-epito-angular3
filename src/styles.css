@@ -1,20 +1,24 @@
-html {
+html, body {
     background-color: rgb(197, 197, 197);
     scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Unica One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 a:hover {
     cursor: pointer;
 }
 
-* {
-    font-family: "Unica One", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+input, textarea {
+    font-size: 16px;
+    touch-action: manipulation;
 }

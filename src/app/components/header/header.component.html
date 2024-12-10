@@ -1,15 +1,15 @@
 <header>
-    <div class="logo">
-      <a routerLink="/"><img src="../../../assets/1dani.png" alt="Weilad Építő logo"></a>
-    </div>
-    <nav>
-      <ul>
-        <li><a routerLink="/">Kezdőlap</a></li>
-        <li><a routerLink="/references">Referenciák</a></li>
-        <li><a routerLink="/services">Szolgáltatások</a></li>
-        <li><a routerLink="/about">Rólunk</a></li>
-        <li><a routerLink="/contact">Kapcsolat</a></li>
-      </ul>
-    </nav>
-  </header>
-  
+  <div class="logo">
+    <a routerLink="/"><img src="assets/1dani.png" alt="Weiland Építő logo" /></a>
+  </div>
+  <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+  <nav [class.active]="menuActive">
+    <ul>
+      <li><a routerLink="/" (click)="toggleMenu()">Kezdőlap</a></li>
+      <li><a routerLink="/references" (click)="toggleMenu()">Referenciák</a></li>
+      <li><a routerLink="/services" (click)="toggleMenu()">Szolgáltatások</a></li>
+      <li><a routerLink="/gallery" (click)="toggleMenu()">Galéria</a></li>
+      <li><a routerLink="/contact" (click)="toggleMenu()">Kapcsolat</a></li>
+    </ul>
+  </nav>
+</header>

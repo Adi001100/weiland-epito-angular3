@@ -1,11 +1,47 @@
 .comparison-grid {
-  margin-top: 20px;
+  margin: 2vh 2.5vh;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 oszlopos elrendezés */
-  gap: 20px; /* Térköz a képek között */
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+  min-height: 77vh;
 }
 
-.image-comparison-container {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 3vh auto;
   width: 100%;
-  height: 300px;
+  height: auto;
+}
+
+.egyedul {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100vh;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+@media (max-width: 799px) {
+  .comparison-grid {
+    grid-template-columns: repeat(1, auto);
+    grid-auto-rows: auto;
+    gap: 10px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .egyedul {
+    width: 51vh;
+    margin: 0 auto 5vh auto;
+  }
+}
+
+@media (max-width: 1333px) {
+  .egyedul {
+    width: 51vh;
+  }
 }

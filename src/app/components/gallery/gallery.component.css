@@ -1,0 +1,15 @@
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 oszlopos grid */
+    gap: 15px;  /* Kép közötti távolság */
+    justify-items: center;
+    padding: 20px;
+  }
+  
+  .gallery-container img {
+    width: 100%; /* Kép kitölti a konténer szélességét */
+    max-height: 600px; /* A képek maximális magassága, ha szükséges */
+    object-fit: cover; /* Az arányok megtartása, ha a képek nem azonos méretűek */
+    border-radius: 8px; /* Lekerekített sarkok, opcionális */
+  }
+  

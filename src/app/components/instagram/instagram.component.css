@@ -1,0 +1,4 @@
+.instagram-embed {
+    max-width: 500px; /* Instagram bejegyzés szélességének korlátozása */
+    margin: 0 auto; /* Középre igazítás */
+  }

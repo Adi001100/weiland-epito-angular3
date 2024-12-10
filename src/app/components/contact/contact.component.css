@@ -1,55 +1,125 @@
 a:hover {
-    cursor: pointer;
-  }
-  
+  cursor: pointer;
+}
+
+.contact-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.success-message, .error-message {
+  margin-top: 20px;
+  color: green;
+  text-align: center;
+  font-size: 5vh;
+  transition: opacity 1s ease-out;
+  opacity: 1;
+}
+
+.error-message{
+  color: red !important;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+@media (max-width: 480px) {
   .contact-container {
-      width: 80%;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    
-    .form-group {
-      margin-bottom: 15px;
-    }
-    
-    label {
-      display: block;
-      margin-bottom: 5px;
-    }
-    
-    input, textarea {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    
-    textarea {
-      height: 100px;
-    }
-    
-    button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    
-    button:hover {
-      background-color: #45a049;
-    }
-    
-    .success-message {
-      margin-top: 20px;
-      color: green;
-      text-align: center;
+      width: 90%;
+      padding: 10px;
+  }
+
+  h2 {
+      font-size: 1.5em;
+  }
+
+  .success-message {
+      font-size: 3vh;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .contact-container {
+      width: 85%;
+  }
+
+  h2 {
+      font-size: 1.75em;
+  }
+
+  .success-message {
+      font-size: 4vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-container {
+      width: 85%;
+  }
+
+  .success-message {
+      font-size: 4vh;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .contact-container {
+      width: 70%;
+  }
+}
+
+@media (min-width: 1441px) {
+  .contact-container {
+      width: 60%;
+  }
+
+  .success-message {
       font-size: 5vh;
-    }
-    
+  }
+}

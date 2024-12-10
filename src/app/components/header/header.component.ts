@@ -1,12 +1,19 @@
 // src/app/header.component.ts
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, CommonModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  menuActive = false;
+
+  toggleMenu() {
+    this.menuActive = !this.menuActive;
+  }
+}
