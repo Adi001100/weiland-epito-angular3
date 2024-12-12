@@ -33,6 +33,12 @@ nav ul li a:hover {
   max-height: 30px;
 }
 
+nav ul li a.active {
+  background-color: #555;
+  color: #fff;
+  font-weight: bold;
+}
+
 .menu-toggle {
   display: none;
   font-size: 40px;
@@ -40,7 +46,7 @@ nav ul li a:hover {
   border: none;
   color: white;
   cursor: pointer;
-  
+
   position: absolute;
   top: 50%;
   right: 3vh;
@@ -60,7 +66,7 @@ nav ul li a:hover {
     width: 100%;
     z-index: 1000;
   }
-  
+
   nav.active ul {
     display: flex;
   }
